@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Indresh</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media print {
+            .download-button {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="resume">
@@ -59,6 +83,9 @@
             <p>Date: __________</p>
             <p>Place: __________</p>
         </footer>
+    </div>
+    <div class="download-button" style="text-align: center; margin-top: 20px;">
+        <a href="#" onclick="window.print();" class="btn">Download PDF</a>
     </div>
 </body>
 </html>
